@@ -15,4 +15,8 @@ const quoteList = [
 
 ];
 
-module.exports = quoteList;
+const getQuote = () => {
+  return quoteList[Math.floor(Math.random()*quoteList.length)]
+};
+
+module.exports = getQuote;
